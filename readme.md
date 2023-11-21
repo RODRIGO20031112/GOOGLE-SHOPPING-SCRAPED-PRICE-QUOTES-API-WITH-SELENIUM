@@ -7,8 +7,8 @@ Bem-vindo à API de Cotação de Preços com o Chat GPT-3.5 Turbo! Esta API util
 1. Clone este repositório em sua máquina local.
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/RODRIGO20031112/GOOGLE-SHOPPING-SCRAPED-PRICE-QUOTES-API-WITH-SELENIUM.git
+   cd SPRINT2-T2
    ```
 
 2. Crie um arquivo `password.py` no mesmo diretório do código Python com a seguinte estrutura:
