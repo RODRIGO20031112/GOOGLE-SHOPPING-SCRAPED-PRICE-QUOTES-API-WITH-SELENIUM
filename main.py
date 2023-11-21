@@ -10,7 +10,7 @@ options.add_argument("--headless")
 chrome_service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=chrome_service, options=options)
 
-product = str(input("Digite o que deseja procurar: "))
+product = str(input("Digite o produto que deseja procurar: "))
 pedido = ""
 
 driver.get(f"https://www.google.com/search?q={product}&tbm=shop")
