@@ -20,7 +20,7 @@ def processNaturalLanguage(pedido):
     
     try:
         mensagem = resposta
-        return mensagem["choices"][0]["message"]["content"]
+        return mensagem["choices"][0]["message"]["content"] + " ATENÇÃO! As mensagens geradas com IA retornam o produto que é mais bem avaliado no mercado, isso significa que nem sempre será o mais barato mas sim o mais em conta levando em consideração o custo e benefício relatados por outros clientes que adquiriram mercadorias iguais."
     except Exception:
         mensagem = resposta
         return mensagem['error']['message']
