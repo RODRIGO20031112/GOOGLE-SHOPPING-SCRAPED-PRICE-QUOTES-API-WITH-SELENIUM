@@ -26,7 +26,16 @@ Bem-vindo à API de Cotação de Preços com o Chat GPT-3.5 Turbo! Esta API util
    python main.py
    ```
 
-4. **Se necessário, crie outra conta na OpenAI e obtenha uma nova chave de API, caso receba uma mensagem indicando que a cota foi excedida.**
+4. **Você pode alterar o código descomentando algumas linhas para ele rodar normalmente em sua máquina ou se preferir pode disparar uma requisição para http://127.0.0.1:5000/api/processNaturalLanguage/LowestPrice, lembrese-se que essa requisição é do tipo POST e espera um corpo que é:**
+
+   ```bash
+   {
+   "product": "Iphone 15",
+   "option": 0 # pode ser 0 ou 1 (0 para Custo Benefício - Pesquisa com ChatGPT ou 1 para Menor preço - Método Sort eficiente para ordenação de preços)
+   }
+   ```
+
+5. **Se necessário, crie outra conta na OpenAI e obtenha uma nova chave de API, caso receba uma mensagem indicando que a cota foi excedida.**
 
 ## Observações
 

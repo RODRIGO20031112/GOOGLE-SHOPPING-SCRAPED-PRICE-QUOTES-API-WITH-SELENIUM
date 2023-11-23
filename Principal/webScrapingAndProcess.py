@@ -68,11 +68,23 @@ def choice(product, choice):
 
         resp3 = resp1 + resp2
         print("Resposta final sendo processada. Aguarde...")
-        print(processNaturalLanguage(resp3 + "Baseado nos textos acima me de os dados do produto mais em conta"))
+        # print(processNaturalLanguage(resp3 + "Baseado nos textos acima me de os dados do produto mais em conta"))
+        return processNaturalLanguage(resp3 + "Baseado nos textos acima me de os dados do produto mais em conta")
     elif(choice == 1):
         lista.sort(key=lambda x: float(re.findall(r'[-+]?\d*[.,]\d+|\d+', x["Preço"])[0].replace('.', '').replace(',', '.')))
+        
+        data = []
+        # for item in lista: print(f"Título: {item['Título']}\nPreço: {item['Preço']}\nLoja: {item['Loja']}\nFrete: {item['Frete']}\n")
 
-        for item in lista: print(f"Título: {item['Título']}\nPreço: {item['Preço']}\nLoja: {item['Loja']}\nFrete: {item['Frete']}\n")
+        for item in lista:
+            data.append({
+                "Frete": item['Frete'],
+                "Preço": item['Preço'],
+                "Loja": item['Loja'],
+                "Título": item['Título']
+            })
+
+        return data
     else:
         print("Essa opção não existe.")
 
