@@ -71,6 +71,8 @@ def choice(product, choice):
         # print(processNaturalLanguage(resp3 + "Baseado nos textos acima me de os dados do produto mais em conta"))
         return processNaturalLanguage(resp3 + "Baseado nos textos acima me de os dados do produto mais em conta")
     elif(choice == 1):
+        # lista.sort(key=lambda x: float(re.findall(r'[-+]?\d*[.,]\d+|\d+', x["Preço"])[0].replace('.', '').replace(',', '.')))
+        lista = [x for x in lista if re.findall(r'[-+]?\d*[.,]\d+|\d+', x["Preço"])]
         lista.sort(key=lambda x: float(re.findall(r'[-+]?\d*[.,]\d+|\d+', x["Preço"])[0].replace('.', '').replace(',', '.')))
         
         data = []
