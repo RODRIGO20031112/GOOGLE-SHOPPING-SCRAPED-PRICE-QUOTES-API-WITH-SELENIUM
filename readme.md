@@ -8,10 +8,10 @@ Bem-vindo à API de Cotação de Preços com o Chat GPT-3.5 Turbo! Esta API util
 
    ```bash
    git clone https://github.com/RODRIGO20031112/GOOGLE-SHOPPING-SCRAPED-PRICE-QUOTES-API-WITH-SELENIUM.git
-   cd SPRINT2-T2
+   cd GOOGLE-SHOPPING-SCRAPED-PRICE-QUOTES-API-WITH-SELENIUM/Principal
    ```
 
-2. Crie um arquivo `password.py` no mesmo diretório do código Python com a seguinte estrutura:
+2. Crie um arquivo `password.py` no mesmo diretório do código Python (main.py) com a seguinte estrutura:
 
    ```python
    # password.py
